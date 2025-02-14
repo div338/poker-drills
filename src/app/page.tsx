@@ -32,6 +32,8 @@ export interface CardTypeLocal {
   value: Value;
 }
 
+type Position = keyof typeof handRanges;
+
 const generateDeck = (): CardTypeLocal[] => {
   const suits: Suit[] = ["♠", "♥", "♦", "♣"];
   const values: Value[] = [
