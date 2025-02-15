@@ -95,7 +95,7 @@ const evaluateHandForPosition = (
 };
 
 export default function PokerDrillPage() {
-  const positions = ["BTN", "SB", "BB", "UTG", "MP", "CO"];
+  const positions: Position[] = ["BTN", "SB", "BB", "UTG", "MP", "CO"];
   const [cycleIndex, setCycleIndex] = useState(0);
   const [handVersion, setHandVersion] = useState(0);
   const [currentHand, setCurrentHand] = useState<CardTypeLocal[]>(generateHand(2));
