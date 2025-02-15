@@ -87,7 +87,7 @@ const convertHandToRange = (hand: CardTypeLocal[]): string => {
 
 const evaluateHandForPosition = (
   hand: CardTypeLocal[],
-  position: string
+  position: Position
 ): boolean => {
   const handString = convertHandToRange(hand);
   console.log(`Evaluating hand for position ${position}:`, handString);
